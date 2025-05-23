@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Horizontal Timeline</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 50px;
+      background: #f9f9f9;
+    }
+
+    .timeline {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 0 auto;
+      padding-top: 60px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background-color: #0077cc;
+      transform: translateY(-50%);
+      z-index: 0;
+    }
+
+    .timeline-item {
+      position: relative;
+      text-align: center;
+      width: 150px;
+    }
+
+    .timeline-item .dot {
+      width: 20px;
+      height: 20px;
+      background: white;
+      border: 4px solid #0077cc;
+      border-radius: 50%;
+      margin: 0 auto;
+      position: relative;
+      z-index: 1;
+    }
+
+    .timeline-item .date {
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .timeline-item .desc {
+      margin-top: 10px;
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    @media(max-width: 700px) {
+      .timeline {
+        flex-direction: column;
+      }
+
+      .timeline::before {
+        top: unset;
+        left: 50%;
+        width: 4px;
+        height: 100%;
+        transform: translateX(-50%);
+      }
+
+      .timeline-item {
+        width: auto;
+        margin-bottom: 40px;
+      }
+
+      .timeline-item .dot {
+        margin: 0 auto;
+      }
+
+      .timeline-item .date,
+      .timeline-item .desc {
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="timeline">
+    <div class="timeline-item">
+      <div class="date">2022</div>
+      <div class="dot"></div>
+      <div class="desc">Started learning HTML & CSS</div>
+    </div>
+    <div class="timeline-item">
+      <div class="date">2023</div>
+      <div class="dot"></div>
+      <div class="desc">Built my first portfolio</div>
+    </div>
+    <div class="timeline-item">
+      <div class="date">2024</div>
+      <div class="dot"></div>
+      <div class="desc">Learned JavaScript & Git</div>
+    </div>
+    <div class="timeline-item">
+      <div class="date">2025</div>
+      <div class="dot"></div>
+      <div class="desc">Started with React & Open Source</div>
+    </div>
+  </div>
+
+</body>
+</html>

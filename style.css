@@ -1,0 +1,34 @@
+main {
+    max-width: inherit;
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+
+
+}
+
+.Historico { 
+    position: absolute;
+    display: inline-block;
+}
+
+.barra {
+    width:0.01px;
+    height: 200px;
+    border: 1px solid black;
+    display: flex;
+}
+
+
+
+.bola{
+
+    border-radius: 100%;
+    width:10px;
+    height: 10px;
+    border: 1px solid black;
+    display: flex;
+    background-color: black;
+
+}
