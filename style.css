@@ -1,34 +1,93 @@
-main {
-    max-width: inherit;
-    align-items: center;
+body { 
+
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
     display: flex;
-    height: 100vh;
     justify-content: center;
-
+    align-items: center;
 
 }
 
-.Historico { 
-    position: absolute;
-    display: inline-block;
-}
+.main { 
 
-.barra {
-    width:0.01px;
-    height: 200px;
-    border: 1px solid black;
+    border: 3px solid black;
+    border-radius: 20px;
+    height: 1000px;
+    width: 1000px;
     display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding-top: 50px;
 }
 
+.title {
 
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    flex-direction: column;
 
-.bola{
+}
 
-    border-radius: 100%;
-    width:10px;
-    height: 10px;
-    border: 1px solid black;
+.phrase {
+
+    justify-content: center;
+    height: 70px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.TimeLine { 
     display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+    width: 800px;
+    flex-direction: column;
+
+}
+
+.line { 
+    margin-left: -220px;
+    position: fixed;
+    width: 0.01px;
+    height: inherit;
+    border: 2px solid black;
+}
+
+.point {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
     background-color: black;
+    border-radius: 50%;
+}
 
+
+.log1{
+
+height: 800px;
+display: flex;
+align-items: center;
+flex-direction: row;
+gap: 50px;
+
+}
+
+button {
+
+    background-color: black ;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-left: -50;
+}
+
+p { 
+     font-family: 'Times New Roman', Times, serif;
+     font-size: 21px;
 }
